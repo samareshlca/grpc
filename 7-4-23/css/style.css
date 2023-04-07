@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+:root{ --primary-color: #01622F; --accent-color:#C09346; --font: 'Playfair Display', serif; --effect: 0.3s ease-in-out; }
+
+body{ font-family: var(--font); color:#000; font-size:16px; font-weight:400; padding: 0; margin: 0; }
+
+h2, h3, h4, h5, h6, p{ padding: 0; margin: 0; }
+
+ul{ list-style: none; padding: 0; margin: 0; }
+
+a{ display: inline-block; text-decoration:none; }
+
+.img-fluid{ width: 100%; height:auto; }
+
+.container{ max-width: 1170px; margin: 0 auto; }
+
+header{ padding: 0; margin: 0; background-color: #fff; }
+header .header-top{ padding: 20px 0 0 0; margin: 0; }
+header .header-top .container{ border-bottom: 1px solid #D7D7D7; padding-bottom:20px; }
+header .header-top .d-flex{ display: flex; justify-content:space-between; align-items:center; }
+header .header-top .d-flex .icon-block{ padding: 0; margin: 0; display: flex; gap: 10px; }
+header .header-top .d-flex .icon-block i{ color: #3C5E9D; font-size:18px; padding: 0; margin: 0; }
+header .header-top .d-flex .language-block{ border:1px solid #E4E4E4; padding: 0; margin: 0; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px; margin: 0; border-radius: 20px;  }
+header .header-top .d-flex .language-block select{ outline: none; padding: 0; margin: 0; border:none; text-transform:capitalize; }
+header .header-top .d-flex .language-block i{ position:relative; }
+header .header-top .d-flex .language-block i::after{ content: ""; position:absolute; width:1px; height:20px; background-color: #dadada; right:22px; top:-2px; }
+
+header .header-bottom{ padding: 25px 0; margin: 0; }
+header .header-bottom .menu-block{ padding: 0; margin: 0; }
+header .header-bottom .menu-block nav{ padding: 0; margin: 0; }
+header .header-bottom .menu-block nav ul{ display: flex; justify-content: center; align-items: center; padding: 0; margin: 0; gap: 25px }
+header .header-bottom .menu-block nav ul li{ padding: 0; margin: 0; }
+header .header-bottom .menu-block nav ul li a{ padding: 0; margin: 0; color: var(--accent-color); font-size:13px; font-weight:800; transition: var(--effect); }
+header .header-bottom .menu-block nav ul li:hover a{ color: #760000; }
+
+/*BANNER START*/
+
+.banner{ background-image:url(../images/banner.png); background-size:auto; height:455px; background-repeat: no-repeat; position:relative; }
+.banner::after{ content:""; position:absolute; background-image: linear-gradient(90deg, rgba(1,98,47,1) 0%, rgba(1,98,47,1) 33%, rgba(1,98,47,0) 100%); width:60%; height:100%;  }
+
+/*BANNER END*/
