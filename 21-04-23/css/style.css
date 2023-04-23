@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+:root{ --primary-color: #01622F; --accent-color:#C09346; --font: 'Playfair Display', serif; --effect: 0.3s ease-in-out; }
+
+body{ font-family: var(--font); color:#000; font-size:16px; line-height: 1.3; font-weight:400; padding: 0; margin: 0; background-color: #fff; }
+
+h2, h3, h4, h5, h6, p{ padding: 0; margin: 0; }
+
+ul{ list-style: none; padding: 0; margin: 0; }
+
+a{ display: inline-block; text-decoration:none; }
+
+.img-fluid{ width: 100%; height:auto; }
+
+.container{ max-width: 1270px; margin: 0 auto; padding: 0 15px; }
+
+header{ padding: 0; margin: 0; background-color: #fff; }
+header .header-top{ padding: 20px 0 0 0; margin: 0; }
+header .header-top .container{ border-bottom: 1px solid #D7D7D7; padding-bottom:20px; }
+header .header-top .d-flex{ display: flex; justify-content:space-between; align-items:center; }
+header .header-top .d-flex .icon-block{ padding: 0; margin: 0; display: flex; gap: 10px; flex-wrap: wrap; line-height:0; }
+header .header-top .d-flex .icon-block i{ color: #3C5E9D; font-size:18px; padding: 0; margin: 0; }
+header .header-top .d-flex .language-block{ border:1px solid #E4E4E4; padding: 0; margin: 0; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px; margin: 0; border-radius: 20px;  }
+header .header-top .d-flex .language-block select{ outline: none; padding: 0; margin: 0; border:none; text-transform:capitalize; }
+header .header-top .d-flex .language-block i{ position:relative; }
+header .header-top .d-flex .language-block i::after{ content: ""; position:absolute; width:1px; height:20px; background-color: #dadada; right:22px; top:-2px; }
+
+header .header-bottom{ padding: 25px 0; margin: 0; }
+header .header-bottom .menu-block{ padding: 0; margin: 0; }
+header .header-bottom .menu-block a.mobile-menu{ display: flex; justify-content: center; color: var(--accent-color); display: none; }
+header .header-bottom .menu-block nav{ padding: 0; margin: 0; }
+header .header-bottom .menu-block nav ul{ display: flex; justify-content: center; align-items: center; padding: 0; margin: 0; gap: 25px; }
+header .header-bottom .menu-block nav ul li{ padding: 0; margin: 0; }
+header .header-bottom .menu-block nav ul li a{ padding: 0; margin: 0; color: var(--accent-color); font-size:13px; font-weight:800; transition: var(--effect); }
+header .header-bottom .menu-block nav ul li:hover a{ color: #760000; }
+
+/*BANNER START*/
+
+.banner{  height: 500px; position:relative;  }
+.banner::after{ content:""; position:absolute; background-image: linear-gradient(90deg, rgba(1,98,47,1) 0%, rgba(1,98,47,1) 33%, rgba(1,98,47,0) 100%); width:60%; height:100%; top:0; left:0;   }
+.banner .container{ position: absolute; top: 0; left: 30px; right: 0; }
+.banner img { width:100%; height:100%; object-fit:cover; }
+.banner .title-block{ padding: 0; margin: 0; position: absolute; top: 140px; left:0; z-index:9999; }
+.banner .title-block h3{ font-size: 24px; color: #fff; font-weight: 800; padding-bottom: 15px; margin: 0; text-transform: uppercase; position: relative; }
+.banner .title-block h3::before{ content:""; position:absolute; width: 40%; height:3px; left:0; bottom: -2px; background-color:#fff; }
+.banner .title-block h2{ font-size: 73px; color: #fff; font-weight: 800; line-height: 71px; padding: 15px 0 0 0; margin: 0 0 15px 0; text-transform: uppercase; border-top: 1px dashed #fff; }
+.banner .title-block h4{ font-size: 38px; color: #fff; font-weight: 800; padding: 0; margin: 0; text-transform: uppercase; }
+/* SLIDER CSS START */
+
+.banner-slider button.slick-prev.slick-arrow.slick-disabled{ display: none; }
+.banner-slider button.slick-next.slick-arrow.slick-disabled{ display: none; }
+.banner-slider ul.slick-dots{ display: flex; position: absolute; left: 332px; bottom: 20px; gap: 7px; cursor: pointer; }
+.banner-slider ul.slick-dots li button{ display: none; }
+.banner-slider ul.slick-dots li{ width: 24px; height: 5px; background-color: var(--accent-color); cursor: pointer; }
+.banner-slider ul.slick-dots li.slick-active{ background-color: #fff; }
+
+/* SLIDER CSS END */
+
+/*BANNER END*/
+
+/*POLO CLUB START*/
+
+section.Polo-Club{ padding: 50px 0 0 0; margin: 0; background-color: #fff  }
+section.Polo-Club .d-flex{ display: flex; justify-content:space-between; }
+section.Polo-Club .d-flex .title-block{ width: 65%; padding: 0; margin: 0; }
+section.Polo-Club .d-flex .title-block h2{ font-size: 30px; color: #222222; line-height: 1; font-weight: 800; text-transform: uppercase; padding: 0 0 23px 0; margin: 0; position: relative; }
+section.Polo-Club .d-flex .title-block h2::after{ content: ""; position: absolute; width: 23%; height: 3px; background-color: var(--accent-color); left: 0; bottom: 0;  }
+section.Polo-Club .d-flex .title-block h2::before{ content: ""; position: absolute; width: 50%; height: 3px; border-top: 2px dashed var( --accent-color); left: 0; bottom: -2.4px;  }
+section.Polo-Club .d-flex .title-block p{ font-size: 14px; color: #666666; line-height: 21px; font-weight: 400; margin-top: 25px; }
+section.Polo-Club .d-flex .count-block{ width: 30%; padding: 0; margin: 0; background-color: #EBEBEB; }
+section.Polo-Club .d-flex .count-block .count-text{ padding: 30px 0; }
+section.Polo-Club .d-flex .count-block img{ display: flex; margin: 0 auto; margin-top: 35px; max-width: 100%; height: auto;}
+section.Polo-Club .d-flex .count-block h3{ text-align: center; font-size: 22px; font-weight: bold; color: #222222; text-transform: uppercase; }
+section.Polo-Club .d-flex .count-block p{ text-align: center; font-size: 14px; font-weight: bold; color: #222222; text-transform: uppercase; margin-top: 30px; }
+section.Polo-Club .d-flex .count-block .link-block{ padding: 30px 0 30px 35px; background-color: var(--primary-color); margin: 0; }
+section.Polo-Club .d-flex .count-block .link-block h4{ font-size: 22px; font-weight: bold; color: #fff; text-transform: uppercase; padding: 0; margin: 0 0 25px 0;  }
+section.Polo-Club .d-flex .count-block .link-block p{ font-size: 14px; font-weight: 400; color: var(--accent-color); text-align: inherit; padding: 0; margin: 0 0 10px; text-transform: capitalize; }
+section.Polo-Club .d-flex .count-block .link-block p:nth-of-type(2){ margin: 0; }
+
+
+/*POLO CLUB END*/
+
+/*SOCIAL MEDIA FEEDS START*/
+
+section.social-block{ padding: 25px 10px 10px 10px; margin: 0; background-color: var(--accent-color);  }
+section.social-block h2{ font-size: 20px; color: #fff; font-weight: bold; padding: 0; margin: 0; }
+section.social-block .title-block{ text-align: center; margin-bottom: 25px; }
+section.social-block .gallery-block{ padding: 0; margin: 0; line-height: 0; }
+section.social-block .gallery-block img{ width: 100%; height:auto; }
+section.social-block .gallery-block .singl-gallery-img { width:25% }
+
+/*SOCIAL MEDIA FEEDS END*/
+
+/*LATEST NEWS START*/
+
+section.latest-news{ padding: 40px 0 73px 0; margin: 0; background-color: #EBEBEB; }
+section.latest-news .title-block{ padding: 0; margin: 0; text-align: center; }
+section.latest-news .title-block h2{ font-size: 20px; color: #222222; font-weight: bold; text-transform: uppercase; padding: 0 0 20px; margin: 0; text-align: center; position: relative; }
+section.latest-news .title-block h2::after{ content: ""; position: absolute; width: 9%; height: 3px; background-color: var( --accent-color); left: 45%; bottom: 0;  }
+section.latest-news .title-block h2::before{ content: ""; position: absolute; width: 20%; height: 3px; border-bottom: 2px dashed var( --accent-color); left: 40%; bottom: 0;  }
+
+section.latest-news .news-slider{ padding: 0; margin-top: 25px; }
+section.latest-news .news-slider .box{ width: 369px; background-color: #FFFFFF; }
+section.latest-news .news-slider .box img{ max-width:100%; height:auto; }
+section.latest-news .news-slider .box .text-block{ padding: 20px; margin: 0; }
+section.latest-news .news-slider .box .text-block h3{ font-size: 14px; font-weight: bold; color: #333333; padding: 0; margin: 0; }
+section.latest-news .news-slider .box .text-block p{ font-size: 13px; font-weight: 400; color: #999999; padding: 0; margin: 20px 0; }
+section.latest-news .news-slider .box .text-block a{ font-size: 12px; font-weight: bold; color: var(--accent-color); text-transform: uppercase; padding: 10px 20px; margin: 0; background-color: #EBEBEB; transition: var(--effect); }
+section.latest-news .news-slider .box .text-block a:hover{ color: #fff; background-color: var(--accent-color); }
+
+/* slider css */
+section.latest-news .news-slider button.slick-prev.slick-arrow.slick-disabled{ display: none; }
+section.latest-news .news-slider button.slick-next.slick-arrow.slick-disabled{ display: none; }
+section.latest-news .news-slider ul.slick-dots{ display: flex; position: absolute; left: 45%; bottom: -30px; gap: 7px; cursor: pointer; }
+section.latest-news .news-slider ul.slick-dots li button{ display: none; }
+section.latest-news .news-slider ul.slick-dots li{ width: 24px; height: 5px; background-color: var(--accent-color); cursor: pointer; }
+section.latest-news .news-slider ul.slick-dots li.slick-active{ background-color: #760000; }
+
+/*LATEST NEWS END*/
+
+/*OUR PARTNERS START*/
+
+section.our-partners{ padding: 40px 0; margin: 0; background-color: #FFFFFF; }
+section.our-partners .title-block{ padding: 0; margin: 0 0 35px 0; text-align: center; }
+section.our-partners .title-block h2{ font-size: 20px; color: #222222; font-weight: bold; text-transform: uppercase; padding: 0 0 20px; margin: 0; text-align: center; position: relative; }
+section.our-partners .title-block p{ font-size: 14px; color: #222222; font-weight: 400; text-transform: uppercase; padding: 0; margin: 0; }
+
+section.our-partners .our-image-block{ padding: 0; margin: 0; }
+section.our-partners .our-image-block img{ margin: 0 auto; }
+
+/* slider css */
+section.our-partners li{ display: none; }
+section.our-partners button.slick-prev.slick-arrow{     position: absolute; left: 0; top: 21px; border: none; font-size: 24px; cursor: pointer; } 
+section.our-partners button.slick-next.slick-arrow{     position: absolute; right: 0; top: 21px; border: none; font-size: 24px; cursor: pointer; }
+
+
+/*OUR PARTNERS END*/
+
+/* FOOTER START */
+
+footer{ background-color: #252525; padding: 40px; }
+footer .d-flex{ display: flex; justify-content: space-between; gap:50px; align-items: center; flex-wrap: wrap; }
+footer .d-flex .footer-logo{ width: 25%; }
+footer .d-flex .footer-logo a img{ width: 100%; height:auto; }
+footer .d-flex .racing-club{ width: 18%; padding: 0; margin: 0; }
+footer .d-flex .racing-club h3{ color: #fff; font-size: 14px; font-weight: 400; padding: 0; margin: 0 0 10px 0; }
+footer .d-flex .racing-club ul li{ color: #999999; font-size: 12px; font-weight: 400; padding: 0; margin: 0 0 10px 0; }
+footer .d-flex .racing-club ul li:nth-of-type(2){ margin:0;  }
+
+footer .d-flex .contact{ width: 10%; padding: 0; margin: 0; }
+footer .d-flex .contact ul li{ color: #999999; font-size: 12px; font-weight: 400; padding: 0; margin: 0 0 10px 0; display: flex;  }
+footer .d-flex .contact ul li:nth-of-type(3){ margin:0;  }
+footer .d-flex .contact ul li a{ color: #999999; font-size: 12px; font-weight: 400; padding: 0; margin: 0; }
+
+footer .d-flex .icon-copyright{ width: 21%; }
+footer .d-flex .icon-copyright .icon-block{ display: flex; justify-content: flex-end; margin-bottom: 10px; }
+footer .d-flex .icon-copyright .copyright-block p{ color: #999999; font-size: 10px; font-weight:400; padding: 0; margin: 0 0 10px 0; display: flex; justify-content: flex-end; }
+footer .d-flex .icon-copyright .copyright-block p:nth-of-type(2){ margin: 0; }
+footer .d-flex .icon-copyright .copyright-block a{ color: var(--accent-color); font-size: 10px; font-weight:400; padding: 0; margin: 0; }
+
+/* FOOTER END */
+
+/*RESPONSIVE START*/
+
+@media (max-width: 1794px){
+	.banner-slider ul.slick-dots{ left: 270px; }
+}
+
+@media (max-width: 1669px){
+	.banner-slider ul.slick-dots{ left: 210px; }
+}
+
+@media (max-width: 1400px){
+	.banner-slider ul.slick-dots{ display: flex; position: absolute; left: 70px; bottom: 20px; gap: 7px; cursor: pointer; }
+}
+
+@media (max-width: 1200px){
+	.container{ max-width: 992px; }
+	section.Polo-Club .d-flex .title-block{ width: 60%; }
+	section.Polo-Club .d-flex .count-block{ width: 35%; }
+	.banner-slider ul.slick-dots{ left: 115px; }
+	footer .d-flex .racing-club{ width: 19%; }
+	footer .d-flex .contact{ width: 12%; }
+	footer .d-flex .icon-copyright{ width: 26%; }
+}
+
+@media (max-width: 1134px){
+	section.latest-news .news-slider .box{ width: 315px; }
+}
+
+@media (max-width: 1132px){
+	.banner{ height: 400px; }
+	.banner .container{ top: -40px; }
+	.banner-slider ul.slick-dots{ left:80px; }
+}
+
+@media (max-width: 992px){
+	.banner{ height: auto; }
+	.banner .title-block{ top: 153px; }
+	.container{ max-width: 768px; }
+	header .header-bottom .menu-block nav ul li a { font-size: 12px; }
+	.banner-slider ul.slick-dots{ left: 120px; }
+	.banner .title-block h3{ font-size: 22px; }
+	.banner .title-block h2{ font-size:65px; }
+	.banner .title-block h4{ font-size:34px }
+	section.Polo-Club .d-flex{ gap: 30px; }
+	section.Polo-Club .d-flex .title-block{ width: 55%; }
+	section.Polo-Club .d-flex .count-block{ width: 45%; }
+	section.Polo-Club .d-flex .title-block h2{ font-size: 24px; }
+	footer .d-flex .racing-club{ width: 24%; }
+	footer .d-flex .contact{ width: 16%; }
+	footer .d-flex .footer-logo{ width: 35%; }
+	footer .d-flex .icon-copyright{ width: 100%; }
+	footer .d-flex .icon-copyright .icon-block{ justify-content: center; gap: 15px; }
+	footer .d-flex .icon-copyright .copyright-block p{ justify-content: center; }
+	section.social-block .gallery-block .singl-gallery-img { width:50% }
+	section.Polo-Club .d-flex .title-block p{ margin-top: 14px; }
+}
+
+@media (max-width: 768px){
+	.banner .title-block h3{ font-size: 18px; }
+	.banner .title-block h2{ font-size: 55px; padding: 10px 0 0 0; margin: 0 0 10px 0; }
+	.banner .title-block h4{ font-size: 29px; }
+	.banner .title-block{ top: 114px; }
+	.container{ max-width: 100%; }
+	header .header-bottom .menu-block nav ul li a { font-size: 11px; }
+	.banner-slider ul.slick-dots{ left: 40px; }
+	section.Polo-Club .d-flex .title-block h2{ font-size: 18px; }
+	section.Polo-Club .d-flex .title-block p{ font-size: 13px; }
+	section.Polo-Club .d-flex .count-block .count-text{ padding: 25px 0; }
+	section.Polo-Club .d-flex .count-block h3{ font-size: 18px; }
+	section.Polo-Club .d-flex .count-block img{ margin-top: 20px; }
+	section.Polo-Club .d-flex .count-block p{ font-size: 12px; margin-top: 25px; }
+	section.Polo-Club .d-flex .count-block .link-block h4{ font-size: 18px; margin-bottom: 20px; }
+	section.Polo-Club .d-flex .count-block .link-block p{ font-size: 12px; }
+	section.Polo-Club .d-flex .count-block .link-block{ padding: 25px 0 25px 30px; }
+	section.social-block h2{ font-size: 18px; }
+	section.latest-news .title-block h2{ font-size: 18px; }
+	footer .d-flex .contact{ width: 19%; }
+	footer .d-flex .racing-club{ width: 28%; }
+}
+
+@media (max-width: 713px){
+	.banner .title-block{ top: 100px; }
+	header .header-bottom .menu-block nav ul{ display: block; display: block; background: var(--primary-color); width: 32%; position: absolute; top: 0; bottom: 0; left: 0; padding: 20px; z-index: 9; transform: scale(0); transition: var(--effect); }
+	header .header-bottom .menu-block a.mobile-menu{ display: flex; }
+	header .header-bottom .menu-block.open-menu ul{ transform: scale(1); }
+	header .header-bottom .menu-block.open-menu a.mobile-menu{ transform: rotate(90deg); }
+	header .header-bottom .menu-block nav ul li{ margin-bottom: 20px; }
+	section.latest-news .news-slider .box{ width: 328px; }
+	footer .d-flex .footer-logo{ width: 35%; }
+	footer .d-flex .contact{ width: 35%; }
+	footer .d-flex .racing-club{ width: 43%; }
+	footer .d-flex .icon-copyright{ width: 43%; }
+	footer .d-flex{ gap: 45px; }
+	footer .d-flex .icon-copyright .icon-block{ justify-content: flex-start; }
+	footer .d-flex .icon-copyright .copyright-block p{ justify-content: flex-start; }
+}
+
+@media (max-width: 623px){
+	.banner .title-block h3{ font-size: 16px; padding-bottom: 10px; }
+	.banner .title-block h2{ font-size: 43px; padding: 0; margin: 0; }
+	.banner .title-block h4{ font-size: 22px; }
+	.banner .title-block{ top: 114px; }
+	header .header-top .d-flex{ flex-wrap: wrap; justify-content: center; text-align: center; gap: 25px; }
+	header .header-top .d-flex .icon-block{ width: 100%; justify-content: center; }
+	header .header-top .d-flex .image-block{ width: 100%; }
+	header .header-top .d-flex .language-block{ width: 50%; }
+	header .header-top .d-flex .language-block select{ width: 95%; }
+	section.latest-news .news-slider .box{ width: 282px; }
+}
+
+@media (max-width: 559px){
+	section.latest-news .news-slider .box{ width: 100%; text-align:center; }
+	section.latest-news .news-slider .box .image-block{ display: flex; justify-content: center; }
+	section.latest-news .news-slider ul.slick-dots{ left: 37%; }
+	.banner .title-block h3{ font-size: 16px; padding-bottom: 10px; }
+	.banner .title-block h2{ font-size: 43px; padding: 0; margin: 0; }
+	.banner .title-block h4{ font-size: 22px; }
+	.banner .title-block{ top: 90px; }
+}
+
+
+
+
