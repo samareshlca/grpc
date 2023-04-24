@@ -20,7 +20,19 @@ header .header-top{ padding: 20px 0 0 0; margin: 0; }
 header .header-top .container{ border-bottom: 1px solid #D7D7D7; padding-bottom:20px; }
 header .header-top .d-flex{ display: flex; justify-content:space-between; align-items:center; }
 header .header-top .d-flex .icon-block{ padding: 0; margin: 0; display: flex; gap: 10px; flex-wrap: wrap; line-height:0; }
-header .header-top .d-flex .icon-block i{ color: #3C5E9D; font-size:18px; padding: 0; margin: 0; }
+header .header-top .d-flex .icon-block a i{ color: #3C5E9D; font-size:18px; padding: 0; margin: 0; }
+header .header-top .d-flex .icon-block a:nth-of-type(2) i{ color: #00ACED; }
+header .header-top .d-flex .icon-block a:nth-of-type(3) i{   background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  
+  background-size: 100%;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent; }
+header .header-top .d-flex .icon-block a:nth-of-type(4) i{ color: #E02F2F; }
 header .header-top .d-flex .language-block{ border:1px solid #E4E4E4; padding: 0; margin: 0; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px; margin: 0; border-radius: 20px;  }
 header .header-top .d-flex .language-block select{ outline: none; padding: 0; margin: 0; border:none; text-transform:capitalize; }
 header .header-top .d-flex .language-block i{ position:relative; }
@@ -160,6 +172,27 @@ footer .d-flex .contact ul li a{ color: #999999; font-size: 12px; font-weight: 4
 
 footer .d-flex .icon-copyright{ width: 21%; }
 footer .d-flex .icon-copyright .icon-block{ display: flex; justify-content: flex-end; margin-bottom: 10px; }
+footer .d-flex .icon-copyright .icon-block{ display: flex; justify-content: flex-end; margin-bottom: 10px; }
+
+footer .d-flex .icon-copyright .icon-block a i{ color: #3C5E9D; font-size:18px; padding: 0; margin: 0; }
+footer .d-flex .icon-copyright .icon-block a:nth-of-type(2) i{ color: #00ACED; }
+footer .d-flex .icon-copyright .icon-block a:nth-of-type(3) i{   background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  
+  background-size: 100%;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent; }
+footer .d-flex .icon-copyright .icon-block a:nth-of-type(4) i{ color: #E02F2F; }
+
+
+
+
+
+
 footer .d-flex .icon-copyright .copyright-block p{ color: #999999; font-size: 10px; font-weight:400; padding: 0; margin: 0 0 10px 0; display: flex; justify-content: flex-end; }
 footer .d-flex .icon-copyright .copyright-block p:nth-of-type(2){ margin: 0; }
 footer .d-flex .icon-copyright .copyright-block a{ color: var(--accent-color); font-size: 10px; font-weight:400; padding: 0; margin: 0; }
